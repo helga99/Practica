@@ -66,6 +66,5 @@ else:
 max_ind = max(students, key=students.get)
 
 print(max_ind, "{:.2f}".format(students.get(max_ind)))
-#print(''.join(sort_students[0][0]), "{:.2f}".format(sort_students[0][1]))
                
 #TIMP NECESAR = 80 min
