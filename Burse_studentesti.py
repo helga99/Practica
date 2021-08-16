@@ -58,13 +58,14 @@ for i in range(m):
                 if avarage >= 8:
                         avarage_min_8 += 1
 
-sort_students = sorted(students.items(), key=lambda x: x[1], reverse=True)
-
 if avarage_min_8 - 1 > p:
         print(p)
 else:
         print(avarage_min_8 - 1)
-        
-print(''.join(sort_students[0][0]), "{:.2f}".format(sort_students[0][1]))
+
+max_ind = max(students, key=students.get)
+
+print(max_ind, "{:.2f}".format(students.get(max_ind)))
+#print(''.join(sort_students[0][0]), "{:.2f}".format(sort_students[0][1]))
                
 #TIMP NECESAR = 80 min
